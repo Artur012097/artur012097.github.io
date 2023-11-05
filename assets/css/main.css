@@ -441,7 +441,7 @@
   height: 250px;
   background: var(--primary);
   border-radius: 12px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   color: var(--white);
   padding: 30px;
@@ -474,7 +474,7 @@
 }
 .service__list > div span {
   display: block;
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 20px;
 }
 
