@@ -1,0 +1,48 @@
+.about {
+	p {
+		font-size: 28px;
+		font-weight: 400;
+		color: var(--black);
+		padding-top: 100px;
+	}
+	
+	h5 {
+		font-size: 32px;
+		font-weight: 600;
+		color: var(--black);
+		padding-top: 60px;
+	}
+
+	&__list {
+		margin-top: 70px;
+
+		li {
+			font-size: 28px;
+			margin-bottom: 50px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			.point {
+				width: 150px;
+				height: 150px;
+				border-radius: 20px;
+
+				img {
+					width: 100px;
+					height: 100px;
+				}
+			}
+
+			&:nth-child(even) {
+				justify-content: flex-end;
+
+				.point {
+					margin-right: 0;
+					margin-left: 20px;
+				}
+			}
+		}
+	}
+}

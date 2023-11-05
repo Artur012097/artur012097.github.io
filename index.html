@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="./assets/css/main.css">
+	<title>Rentday</title>
+</head>
+
+<body>
+	<header class="header">
+		<ul class="header__list main-wrapper">
+			<li><a href="#about">О нас</a></li>
+			<li><a href="#service">Услуги</a></li>
+			<li><a href="#price">Цены</a></li>
+			<li><a href="#route">Маршруты</a></li>
+			<li><a href="#certifiate">Сертификаты</a></li>
+			<li><a href="#media">Фото и видео</a></li>
+			<li><a href="#contacts">Контакты</a></li>
+		</ul>
+	</header>
+	<main class="main">
+		<!-- hero section -->
+		<section class="hero">
+			<div class="hero__content main-wrapper">
+				<div class="hero__image parallax__el" size="250">
+					<img src="./assets/images/hero-image.jpeg" alt="Hero image">
+				</div>
+				<div class="hero__info parallax__el" size="150" data-aos="fade-left">
+					<h1 class="hero__title">
+						Предоставление квадроциклов на сутки в Московской области.
+					</h1>
+					<div class="hero__price">
+						<span>Цена начиная</span>
+						<p>от 10.000 т.р.</p>
+					</div>
+					<a href="#" class="hero__more main-button">
+						Узнать подробнее
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.40442 1.6543L14.7501 7.99995L8.40442 14.3456" stroke="white" stroke-width="1.5"
+								stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M14.7499 8L1.25 8" stroke="white" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round"></path>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</section>
+		<!-- advantages section -->
+		<section class="advantages" id="advantages">
+			<div class="advantages__content main-wrapper">
+				<div class="advantages__block">
+					<div class="icon" data-aos="fade-up">
+						<svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M7.50626 15.2647C7.61657 15.6639 8.02965 15.8982 8.4289 15.7879C8.82816 15.6776 9.06241 15.2645 8.9521 14.8652L7.50626 15.2647ZM6.07692 7.27442L6.79984 7.0747V7.0747L6.07692 7.27442ZM4.7037 5.91995L4.50319 6.64265L4.7037 5.91995ZM3.20051 4.72457C2.80138 4.61383 2.38804 4.84762 2.2773 5.24675C2.16656 5.64589 2.40035 6.05923 2.79949 6.16997L3.20051 4.72457ZM20.1886 15.7254C20.5895 15.6213 20.8301 15.2118 20.7259 14.8109C20.6217 14.41 20.2123 14.1695 19.8114 14.2737L20.1886 15.7254ZM10.1978 17.5588C10.5074 18.6795 9.82778 19.8618 8.62389 20.1747L9.00118 21.6265C10.9782 21.1127 12.1863 19.1239 11.6436 17.1594L10.1978 17.5588ZM8.62389 20.1747C7.41216 20.4896 6.19622 19.7863 5.88401 18.6562L4.43817 19.0556C4.97829 21.0107 7.03196 22.1383 9.00118 21.6265L8.62389 20.1747ZM5.88401 18.6562C5.57441 17.5355 6.254 16.3532 7.4579 16.0403L7.08061 14.5885C5.10356 15.1023 3.89544 17.0911 4.43817 19.0556L5.88401 18.6562ZM7.4579 16.0403C8.66962 15.7254 9.88556 16.4287 10.1978 17.5588L11.6436 17.1594C11.1035 15.2043 9.04982 14.0768 7.08061 14.5885L7.4579 16.0403ZM8.9521 14.8652L6.79984 7.0747L5.354 7.47414L7.50626 15.2647L8.9521 14.8652ZM4.90421 5.19725L3.20051 4.72457L2.79949 6.16997L4.50319 6.64265L4.90421 5.19725ZM6.79984 7.0747C6.54671 6.15847 5.8211 5.45164 4.90421 5.19725L4.50319 6.64265C4.92878 6.76073 5.24573 7.08223 5.354 7.47414L6.79984 7.0747ZM11.1093 18.085L20.1886 15.7254L19.8114 14.2737L10.732 16.6332L11.1093 18.085Z"
+								fill="#ffffff" />
+							<path
+								d="M19.1647 6.2358C18.6797 4.48023 18.4372 3.60244 17.7242 3.20319C17.0113 2.80394 16.1062 3.03915 14.2962 3.50955L12.3763 4.00849C10.5662 4.47889 9.66119 4.71409 9.24954 5.40562C8.8379 6.09714 9.0804 6.97492 9.56541 8.73049L10.0798 10.5926C10.5648 12.3481 10.8073 13.2259 11.5203 13.6252C12.2333 14.0244 13.1384 13.7892 14.9484 13.3188L16.8683 12.8199C18.6784 12.3495 19.5834 12.1143 19.995 11.4227C20.2212 11.0429 20.2499 10.6069 20.1495 10"
+								stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
+						</svg>
+					</div>
+					<div class="advantages__text">
+						<span class="title" data-aos="fade-up" data-aos-delay="50">Доставка</span>
+						<p class="text" data-aos="fade-up" data-aos-delay="100">Предоставляем доставку по всей
+							Московской
+							области</p>
+					</div>
+				</div>
+				<div class="advantages__block">
+					<div class="icon" data-aos="fade-up">
+						<svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M6 21C7.5 19.4 9 17.9673 9 16.2C9 14.4327 7.65685 13 6 13C4.34315 13 3 14.4327 3 16.2C3 17.9673 4.5 19.4 6 21ZM6 21H17.5C18.8807 21 20 19.8807 20 18.5C20 17.1193 18.8807 16 17.5 16H15M18 11C19.5 9.4 21 7.96731 21 6.2C21 4.43269 19.6569 3 18 3C16.3431 3 15 4.43269 15 6.2C15 7.96731 16.5 9.4 18 11ZM18 11H14.5C13.1193 11 12 12.1193 12 13.5C12 14.8807 13.1193 16 14.5 16H15.6"
+								stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</div>
+					<div class="advantages__text">
+						<span class="title" data-aos="fade-up" data-aos-delay="50">Маршрут</span>
+						<p class="text" data-aos="fade-up" data-aos-delay="100">Место для катания выбираете
+							самостоятельно
+						</p>
+					</div>
+				</div>
+				<div class="advantages__block">
+					<div class="icon" data-aos="fade-up"><svg width="800px" height="800px" viewBox="0 0 24 24"
+							fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M9 11V6C9 4.34315 10.3431 3 12 3C13.6569 3 15 4.34315 15 6V10.9673M10.4 21H13.6C15.8402 21 16.9603 21 17.816 20.564C18.5686 20.1805 19.1805 19.5686 19.564 18.816C20 17.9603 20 16.8402 20 14.6V12.2C20 11.0799 20 10.5198 19.782 10.092C19.5903 9.71569 19.2843 9.40973 18.908 9.21799C18.4802 9 17.9201 9 16.8 9H7.2C6.0799 9 5.51984 9 5.09202 9.21799C4.71569 9.40973 4.40973 9.71569 4.21799 10.092C4 10.5198 4 11.0799 4 12.2V14.6C4 16.8402 4 17.9603 4.43597 18.816C4.81947 19.5686 5.43139 20.1805 6.18404 20.564C7.03968 21 8.15979 21 10.4 21Z"
+								stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						</svg></div>
+					<div class="advantages__text">
+						<span class="title" data-aos="fade-up" data-aos-delay="50">Экипировка</span>
+						<p class="text" data-aos="fade-up" data-aos-delay="100">Мы выдаём шлема и подшлемники для
+							каждого
+							водителя и пассажира</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- riding section -->
+		<section class="riding main-section" id="riding">
+			<div class="riding__content main-wrapper">
+				<h2 class="riding__title content-title">
+					<span>Примущества</span> езды на квадроцикле у нас:
+				</h2>
+				<ul class="riding__list">
+					<li data-aos="fade-right">
+						<div class="point"><img src="./assets/icons/arrow.svg" width="20" height="20" alt="Point"></div>
+						Доступный прокат квадроциклов, нет необходимости покупать свою технику.
+					</li>
+					<li data-aos="fade-right" data-aos-delay="50">
+						<div class="point"><img src="./assets/icons/arrow.svg" width="20" height="20" alt="Point"></div>
+						Гибкая продолжительность и маршруты могут быть организованы самостоятельно.
+					</li>
+					<li data-aos="fade-right" data-aos-delay="100">
+						<div class="point"><img src="./assets/icons/arrow.svg" width="20" height="20" alt="Point"></div>
+						Простота управления, требуется минимальная подготовка.
+					</li>
+					<li data-aos="fade-right" data-aos-delay="150">
+						<div class="point"><img src="./assets/icons/arrow.svg" width="20" height="20" alt="Point"></div>
+						В современных квадроциклах безопасность превыше всего
+					</li>
+					<li data-aos="fade-right" data-aos-delay="200">
+						<div class="point"><img src="./assets/icons/arrow.svg" width="20" height="20" alt="Point"></div>
+						Объединяет людей через общие эмоции; идеально подходит для прогулок с друзьями, корпоративного
+						отдыха или семейных традиций.
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- technic section -->
+		<section class="technic main-section" id="technic">
+			<div class="technic__content main-wrapper">
+				<h2 class="technic__title content-title">
+					В нашем парке есть <span>2 вида взрослых</span> и
+					<span>1 детский</span> квадроцикл
+				</h2>
+				<div class="technic-quadbike__list">
+					<div class="technic-quadbike__block parallax__el" size="250" data-aos="fade-up">
+						<h3 class="title">HiSUN TACTIC 750</h3>
+						<div class="image">
+							<img src="./assets/images/hisun-tactic-750.png" alt="HiSUN TACTIC  750">
+						</div>
+						<div class="technic-quadbike__info">
+							<div><img src="./assets/icons/power.svg" alt="Power" width="24" height="24"><span>Мощность</span>: 45л/с</div>
+							<div><img src="./assets/icons/wheel.svg" alt="Wheel" width="24" height="24"><span>Привод</span>: полный</div>
+							<div><img src="./assets/icons/winch.svg" alt="Winch" width="24" height="24"><span>Лебетка</span>: есть</div>
+							<div><img src="./assets/icons/pay-dark.svg" alt="Price" width="24" height="24"><span>Цена</span>: 20.000т.р.</div>
+							<button class="main-button">Забронировать</button>
+						</div>
+					</div>
+					<div class="technic-quadbike__block parallax__el" size="350" data-aos="fade-up" data-aos-delay="150">
+						<h3 class="title">HiSUN TACTIC 550</h3>
+						<div class="image">
+							<img src="./assets/images/hisun-tactic-550.png" alt="HiSUN TACTIC  550">
+						</div>
+						<div class="technic-quadbike__info">
+							<div><img src="./assets/icons/power.svg" alt="Power" width="24" height="24"><span>Мощность</span>: 35л/с</div>
+							<div><img src="./assets/icons/wheel.svg" alt="Wheel" width="24" height="24"><span>Привод</span>: 2wd/4wd</div>
+							<div><img src="./assets/icons/winch.svg" alt="Winch" width="24" height="24"><span>Лебетка</span>: есть</div>
+							<div><img src="./assets/icons/pay-dark.svg" alt="Price" width="24" height="24"><span>Цена</span>: 17.000т.р.</div>
+							<button class="main-button">Забронировать</button>
+						</div>
+					</div>
+					<div class="technic-quadbike__block parallax__el" size="450" data-aos="fade-up" data-aos-delay="300">
+						<h3 class="title">MIKILON RAPIDE 125S</h3>
+						<div class="image">
+							<img src="./assets/images/mikilon-rapide-125s.jpeg" alt="MIKILON RAPIDE 125S">
+						</div>
+						<div class="technic-quadbike__info">
+							<div><img src="./assets/icons/power.svg" alt="Power" width="24" height="24"><span>Мощность</span>: 11л/с</div>
+							<div><img src="./assets/icons/wheel.svg" alt="Wheel" width="24" height="24"><span>Привод</span>: 2wd</div>
+							<div><img src="./assets/icons/winch.svg" alt="Winch" width="24" height="24"><span>Лебетка</span>: нет</div>
+							<div><img src="./assets/icons/pay-dark.svg" alt="Prce" width="24" height="24"><span>Цена</span>: 10.000т.р.</div>
+							<button class="main-button">Забронировать</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--  section -->
+		<section class="our-technics main-section" id="our-technics">
+			<div class="our-technics__slider">
+				<div class="our-technics__swiper swiper">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">
+							<div>
+								<h4>Квадроцикл HISUN TACTIC 750</h4>
+								<p>двухместный квадроцикл, сочетающий в себе практичность и функциональность. Он отлично
+									подойдет для туристических поездок, так как снаряжен металлическими бамперами и
+									лебедкой
+									с тяговым усилием 1134 кг.
+									Благодаря своим небольшим размерам и высокой мощности, он может проехать там, где не
+									проедет ни внедорожник, ни, тем более, обычный автомобиль.
+									С ним вы можете покорить бесконечное количество маршрутов и исследовать самые
+									труднодоступные и интересные места, будь то поездка за грибами, на охоту, на рыбалку
+									или
+									просто отдых на природе.</p>
+							</div>
+							<img src="./assets/images/hisun-tactic-750.png" alt="HiSUN TACTIC  750">
+						</div>
+						<div class="swiper-slide">
+							<div>
+								<h4>Квадроцикл HISUN TACTIC 550</h4>
+								<p>это полноприводный самоходный внедорожник, который подойдет для поездок по любому
+									бездорожью. Оснащен достаточно мощным бензиновым двигателем в 29 лошадиных сил.
+									Благодаря жидкостной системе охлаждения HISUN TACTIC 550 можно эксплуатировать в
+									любое
+									время года при кардинально разных погодных условиях, в том числе в летнюю жару.
+									Электроусилитель руля, которым оснащен квадроцикл HisunTactic 550, делает управление
+									более комфортным</p>
+							</div>
+							<img src="./assets/images/hisun-tactic-550.png" alt="HiSUN TACTIC  550">
+						</div>
+						<div class="swiper-slide">
+							<div>
+								<h4>Детский MIKILON Rapide 125S</h4>
+								<p>максимально управляемый, мощный и маневренный квадроцикл в ряду марки. Этот аппарат
+									станет вашим незаменимым спутником в активных путешествиях по пересеченной
+									местности, а
+									также в спортивных мероприятиях.
+									Без сомнения, за рулем квадроцикла MIKILON Rapide 125S вы получите максимальный
+									заряд
+									позитива.</p>
+							</div>
+							<img src="./assets/images/mikilon-rapide-125s.jpeg" alt="MIKILON RAPIDE 125S">xs
+						</div>
+					</div>
+				</div>
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button swiper-button--prev">
+					<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M30.3088 16C30.3088 23.9025 23.9025 30.3088 16 30.3088C8.09744 30.3088 1.69116 23.9025 1.69116 16C1.69116 8.09744 8.09744 1.69116 16 1.69116C23.9025 1.69116 30.3088 8.09744 30.3088 16Z"
+							fill="none" stroke="#FEFEFE" stroke-width="1.5" stroke-linecap="round"
+							stroke-linejoin="round" />
+						<path d="M22.5883 16L9.41186 16M9.41186 16L14.1177 19.7647M9.41186 16L14.1177 12.2353"
+							stroke="#FEFEFE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</div>
+				<div class="swiper-button swiper-button--next">
+					<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M30.3088 16C30.3088 23.9025 23.9025 30.3088 16 30.3088C8.09744 30.3088 1.69116 23.9025 1.69116 16C1.69116 8.09744 8.09744 1.69116 16 1.69116C23.9025 1.69116 30.3088 8.09744 30.3088 16Z"
+							fill="none" stroke="#FEFEFE" stroke-width="1.5" stroke-linecap="round"
+							stroke-linejoin="round" />
+						<path d="M9.41166 16L22.5881 16M22.5881 16L17.8823 12.2353M22.5881 16L17.8823 19.7647"
+							stroke="#FEFEFE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+
+				</div>
+			</div>
+		</section>
+		<!-- about section -->
+		<section class="about main-section" id="about">
+			<div class="about__content main-wrapper">
+				<h2 class="about__title content-title">
+					<span>О нас</span>
+				</h2>
+				<p>Мы предоставляем услугу посуточной аренды квадроциклов с доставкой, вы можете воспользоваться услугой
+					в
+					своё свободное время. Получить адреналин, проехать по труднодоступным местам, провести время со
+					своей
+					семьей на природе.</p>
+				<h5>Этапы аренды:</h5>
+				<ul class="about__list riding__list">
+					<li data-aos="fade-right">
+						<div class="point"><img src="./assets/icons/pencil.svg" width="150" height="150" alt="Point">
+						</div>
+						Оставления заявки удобным для вас способов
+					</li>
+					<li data-aos="fade-left">
+						Вы направляете документы в любой удобный мессенджер.
+						<div class="point"><img src="./assets/icons/send.svg" width="150" height="150" alt="Point">
+						</div>
+					</li>
+					<li data-aos="fade-right">
+						<div class="point"><img src="./assets/icons/agreement.svg" width="150" height="150" alt="Point">
+						</div>
+						После проверки документов мы составляем с вами договор аренды.
+					</li>
+					<li data-aos="fade-left">
+						Оплата доставки (Услуга оплачивается отдельно и заранее)
+						<div class="point"><img src="./assets/icons/pay.svg" width="150" height="150" alt="Point"></div>
+					</li>
+					<li data-aos="fade-right">
+						<div class="point"><img src="./assets/icons/delivery.svg" width="150" height="150" alt="Point">
+						</div>
+						Мы доставим квадроциклы где вам будет удобно, в пределах всей Московской области.
+					</li>
+					<li data-aos="fade-left">
+						Техника остается с вами на все время пользования
+						<div class="point"><img src="./assets/icons/time.svg" width="150" height="150" alt="Point">
+						</div>
+					</li>
+					<li data-aos="fade-right">
+						<div class="point"><img src="./assets/icons/pay.svg" width="20" height="20" alt="Point"></div>
+						ОПЛАТА (Оплата производится наличными или через терминал)
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- media section -->
+		<section class="media" id="media"></section>
+		<!-- service section -->
+		<section class="service main-section" id="service">
+			<div class="service__content main-wrapper">
+				<h2 class="service__title content-title">
+					<span>
+						Услуги
+					</span>
+					пракат на сутки
+				</h2>
+				<div class="service__list">
+					<div data-aos="fade-up"><span>Взрослый квадроцикл 750</span> 20.000₽</div>
+					<div data-aos="fade-up" data-aos-delay="100"><span>Взрослый квадроцикл 550</span> 17.000₽</div>
+					<div data-aos="fade-up" data-aos-delay="200"><span>Детский квадроцикл</span> 10.000₽</div>
+					<div data-aos="fade-up" data-aos-delay="300"><span>Мы предоставляем к каждому водителю и пассажиру
+							защитный шлем и пошлемник</span></div>
+					<div data-aos="fade-up" data-aos-delay="400"><span>Защитная экипировка от грузки</span> 500р.</div>
+					<div data-aos="fade-up" data-aos-delay="500"><span>(Цена указана за полные сутки без учета
+							доставки)</span></div>
+					<div data-aos="fade-up" data-aos-delay="500"><span>Доставка оплачивается отдельно</span> цена доставки 6.000 т.р. в пределах всей Московской области.</div>
+
+				</div>
+			</div>
+		</section>
+	</main>
+	<!-- footer section -->
+	<footer class="footer">
+
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			once: true,
+		});
+	</script>
+	<script src="./scripts/main.js"></script>
+</body>
+
+</html>

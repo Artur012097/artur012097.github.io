@@ -1,0 +1,46 @@
+.riding {
+	&__list {
+		margin-top: 100px;
+
+		li {
+			display: flex;
+			align-items: center;
+			font-size: 20px;
+			font-weight: 400;
+			margin-bottom: 25px;
+			transition: .3s ease;
+	
+			&::last-child {
+				margin-bottom: 0;
+			}
+
+			.point {
+				width: 40px;
+				height: 40px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background: var(--primary-60);
+				border-radius: 8px;
+				margin-right: 20px;
+				transform: skewX(-12deg);
+				flex-shrink: 0;
+				transition: .5s ease;
+
+				img {
+					width: 20px;
+					height: 20px;
+					transform: skewX(12deg);
+				}
+			}
+
+			&:hover {
+				transform: scale(1.01) !important;
+
+				.point {
+					transform: translateX(5px) skewX(-12deg);
+				}
+			}
+		}
+	}
+}
