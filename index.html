@@ -4,6 +4,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon/favicon-16x16.png">
+	<link rel="manifest" href="./assets/icons/favicon/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="./assets/css/main.css">
@@ -12,18 +18,47 @@
 
 <body>
 	<header class="header">
-		<div class="header__contacts">
-			contacts
+		<div class="header__content">
+			<div class="header-contacts">
+				<div class="header-contacts__content main-wrapper">
+					<a class="header__logo" href="/">
+						<img src="./assets/images/logo.png" alt="Rentday.ru" width="100" height="100">
+					</a>
+					<div class="header-contacts__content-list">
+						<div class="email">
+							<a href="mailto:218@mtarenda.ru"><img src="./assets/icons/email.svg" alt="Email" width="24"
+									height="24">218@mtarenda.ru</a>
+						</div>
+						<div class="phone">
+							<a href="tel:+74991100758"><span>Оффис:</span>+7 (499) 110-07-58</a>
+							<a href="tel:+79295558521"><span>Mобильный: </span>+7 (929) 555-85-21</a>
+						</div>
+						<div class="social">
+							<a href="https://wa.me/74991100758" target="_blank">
+								<img src="./assets/icons/whatsapp.svg" alt="Whatsapp" width="24" height="24">
+							</a>
+						</div>
+						<button class="main-button">Обратная связь <svg width="20px" height="20px" viewBox="0 0 24 24"
+								fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M15 5V9M15 9L19 9M15 9L21 3M18.5 21C9.93959 21 3 14.0604 3 5.5C3 5.11378 3.01413 4.73086 3.04189 4.35173C3.07375 3.91662 3.08968 3.69907 3.2037 3.50103C3.29814 3.33701 3.4655 3.18146 3.63598 3.09925C3.84181 3 4.08188 3 4.56201 3H7.37932C7.78308 3 7.98496 3 8.15802 3.06645C8.31089 3.12515 8.44701 3.22049 8.55442 3.3441C8.67601 3.48403 8.745 3.67376 8.88299 4.05321L10.0491 7.26005C10.2096 7.70153 10.2899 7.92227 10.2763 8.1317C10.2643 8.31637 10.2012 8.49408 10.0942 8.64506C9.97286 8.81628 9.77145 8.93713 9.36863 9.17882L8 10C9.2019 12.6489 11.3501 14.7999 14 16L14.8212 14.6314C15.0629 14.2285 15.1837 14.0271 15.3549 13.9058C15.5059 13.7988 15.6836 13.7357 15.8683 13.7237C16.0777 13.7101 16.2985 13.7904 16.74 13.9509L19.9468 15.117C20.3262 15.255 20.516 15.324 20.6559 15.4456C20.7795 15.553 20.8749 15.6891 20.9335 15.842C21 16.015 21 16.2169 21 16.6207V19.438C21 19.9181 21 20.1582 20.9007 20.364C20.8185 20.5345 20.663 20.7019 20.499 20.7963C20.3009 20.9103 20.0834 20.9262 19.6483 20.9581C19.2691 20.9859 18.8862 21 18.5 21Z"
+									stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							</svg></button>
+					</div>
+				</div>
+			</div>
+			<nav class="header-navigation main-wrapper">
+				<ul class="header-navigation__list">
+					<li><a href="#about">О нас</a></li>
+					<li><a href="#service">Услуги</a></li>
+					<li><a href="#technic">Цены</a></li>
+					<li><a href="#riding">Примущества</a></li>
+					<li><a href="#certifiate">Сертификаты</a></li>
+					<li><a href="#gallery">Фото и видео</a></li>
+					<li><a href="#footer">Контакты</a></li>
+				</ul>
+			</nav>
 		</div>
-		<ul class="header__list main-wrapper">
-			<li><a href="#about">О нас</a></li>
-			<li><a href="#service">Услуги</a></li>
-			<li><a href="#technic">Цены</a></li>
-			<li><a href="#riding">Примущества</a></li>
-			<li><a href="#certifiate">Сертификаты</a></li>
-			<li><a href="#media">Фото и видео</a></li>
-			<li><a href="#footer">Контакты</a></li>
-		</ul>
 	</header>
 	<main class="main">
 		<!-- hero section -->
@@ -112,7 +147,7 @@
 				<h2 class="riding__title content-title">
 					<span>Примущества</span> езды на квадроцикле у нас:
 				</h2>
-				<ul class="riding__list">
+				<ul class="riding__list main-list">
 					<li data-aos="fade-right">
 						<div class="point"><img src="./assets/icons/arrow.svg" width="20" height="20" alt="Point"></div>
 						Доступный прокат квадроциклов, нет необходимости покупать свою технику.
@@ -141,8 +176,7 @@
 		<section class="technic main-section" id="technic">
 			<div class="technic__content main-wrapper">
 				<h2 class="technic__title content-title">
-					В нашем парке есть <span>2 вида взрослых</span> и
-					<span>1 детский</span> квадроцикл
+					<span>В нашем парке есть</span> «2 вида взрослых квадроциклов и 1 вид детских квадроциклов»
 				</h2>
 				<div class="technic-quadbike__list">
 					<div class="technic-quadbike__block parallax__el" size="250" data-aos="fade-up">
@@ -151,36 +185,50 @@
 							<img src="./assets/images/hisun-tactic-750.png" alt="HiSUN TACTIC  750">
 						</div>
 						<div class="technic-quadbike__info">
-							<div><img src="./assets/icons/power.svg" alt="Power" width="24" height="24"><span>Мощность</span>: 45л/с</div>
-							<div><img src="./assets/icons/wheel.svg" alt="Wheel" width="24" height="24"><span>Привод</span>: полный</div>
-							<div><img src="./assets/icons/winch.svg" alt="Winch" width="24" height="24"><span>Лебетка</span>: есть</div>
-							<div><img src="./assets/icons/pay-dark.svg" alt="Price" width="24" height="24"><span>Цена</span>: 20.000т.р.</div>
+							<div><img src="./assets/icons/power.svg" alt="Power" width="24"
+									height="24"><span>Мощность</span>: 45л/с</div>
+							<div><img src="./assets/icons/wheel.svg" alt="Wheel" width="24"
+									height="24"><span>Привод</span>: полный</div>
+							<div><img src="./assets/icons/winch.svg" alt="Winch" width="24"
+									height="24"><span>Лебедка</span>: есть</div>
+							<div><img src="./assets/icons/pay-dark.svg" alt="Price" width="24"
+									height="24"><span>Цена</span>: 20.000т.р.</div>
 							<button class="main-button">Забронировать</button>
 						</div>
 					</div>
-					<div class="technic-quadbike__block parallax__el" size="350" data-aos="fade-up" data-aos-delay="150">
+					<div class="technic-quadbike__block parallax__el" size="350" data-aos="fade-up"
+						data-aos-delay="150">
 						<h3 class="title">HiSUN TACTIC 550</h3>
 						<div class="image">
 							<img src="./assets/images/hisun-tactic-550.png" alt="HiSUN TACTIC  550">
 						</div>
 						<div class="technic-quadbike__info">
-							<div><img src="./assets/icons/power.svg" alt="Power" width="24" height="24"><span>Мощность</span>: 35л/с</div>
-							<div><img src="./assets/icons/wheel.svg" alt="Wheel" width="24" height="24"><span>Привод</span>: 2wd/4wd</div>
-							<div><img src="./assets/icons/winch.svg" alt="Winch" width="24" height="24"><span>Лебетка</span>: есть</div>
-							<div><img src="./assets/icons/pay-dark.svg" alt="Price" width="24" height="24"><span>Цена</span>: 17.000т.р.</div>
+							<div><img src="./assets/icons/power.svg" alt="Power" width="24"
+									height="24"><span>Мощность</span>: 35л/с</div>
+							<div><img src="./assets/icons/wheel.svg" alt="Wheel" width="24"
+									height="24"><span>Привод</span>: 2wd/4wd</div>
+							<div><img src="./assets/icons/winch.svg" alt="Winch" width="24"
+									height="24"><span>Лебедка</span>: есть</div>
+							<div><img src="./assets/icons/pay-dark.svg" alt="Price" width="24"
+									height="24"><span>Цена</span>: 17.000т.р.</div>
 							<button class="main-button">Забронировать</button>
 						</div>
 					</div>
-					<div class="technic-quadbike__block parallax__el" size="450" data-aos="fade-up" data-aos-delay="300">
+					<div class="technic-quadbike__block parallax__el" size="450" data-aos="fade-up"
+						data-aos-delay="300">
 						<h3 class="title">MIKILON RAPIDE 125S</h3>
 						<div class="image">
 							<img src="./assets/images/mikilon-rapide-125s.jpeg" alt="MIKILON RAPIDE 125S">
 						</div>
 						<div class="technic-quadbike__info">
-							<div><img src="./assets/icons/power.svg" alt="Power" width="24" height="24"><span>Мощность</span>: 11л/с</div>
-							<div><img src="./assets/icons/wheel.svg" alt="Wheel" width="24" height="24"><span>Привод</span>: 2wd</div>
-							<div><img src="./assets/icons/winch.svg" alt="Winch" width="24" height="24"><span>Лебетка</span>: нет</div>
-							<div><img src="./assets/icons/pay-dark.svg" alt="Prce" width="24" height="24"><span>Цена</span>: 10.000т.р.</div>
+							<div><img src="./assets/icons/power.svg" alt="Power" width="24"
+									height="24"><span>Мощность</span>: 11л/с</div>
+							<div><img src="./assets/icons/wheel.svg" alt="Wheel" width="24"
+									height="24"><span>Привод</span>: 2wd</div>
+							<div><img src="./assets/icons/winch.svg" alt="Winch" width="24"
+									height="24"><span>Лебедка</span>: нет</div>
+							<div><img src="./assets/icons/pay-dark.svg" alt="Prce" width="24"
+									height="24"><span>Цена</span>: 10.000т.р.</div>
 							<button class="main-button">Забронировать</button>
 						</div>
 					</div>
@@ -274,7 +322,7 @@
 					своей
 					семьей на природе.</p>
 				<h5>Этапы аренды:</h5>
-				<ul class="about__list riding__list">
+				<ul class="about__list main-list">
 					<li data-aos="fade-right">
 						<div class="point"><img src="./assets/icons/pencil.svg" width="150" height="150" alt="Point">
 						</div>
@@ -311,8 +359,28 @@
 				</ul>
 			</div>
 		</section>
-		<!-- media section -->
-		<section class="media" id="media"></section>
+		<!-- gallery section -->
+		<section class="gallery main-section" id="gallery">
+			<div class="gallery__content main-wrapper">
+				<h2 class="gallety__title content-title">
+					<span>Галерея</span>
+				</h2>
+				<div class="gallery__list">
+					<div class="gallery__image" data-aos="fade-up">
+						<img src="./assets/images/image-1.jpeg" alt="image 1">
+					</div>
+					<div class="gallery__image" data-aos="fade-up" data-aos-delay="50">
+						<img src="./assets/images/hero-image.jpeg" alt="image 2">
+					</div>
+					<div class="gallery__image" data-aos="fade-up" data-aos-delay="100">
+						<img src="./assets/images/image-2.jpeg" alt="image 3">
+					</div>
+					<div class="gallery__image" data-aos="fade-up" data-aos-delay="150">
+						<img src="./assets/images/image-3.jpeg" alt="image 4">
+					</div>
+				</div>
+			</div>
+		</section>
 		<!-- service section -->
 		<section class="service main-section" id="service">
 			<div class="service__content main-wrapper">
@@ -328,18 +396,84 @@
 					<div data-aos="fade-up" data-aos-delay="200"><span>Детский квадроцикл</span> 10.000₽</div>
 					<div data-aos="fade-up" data-aos-delay="300"><span>Мы предоставляем к каждому водителю и пассажиру
 							защитный шлем и пошлемник</span></div>
-					<div data-aos="fade-up" data-aos-delay="400"><span>Защитная экипировка от грузки</span> 500р.</div>
-					<div data-aos="fade-up" data-aos-delay="500"><span>(Цена указана за полные сутки без учета
-							доставки)</span></div>
-					<div data-aos="fade-up" data-aos-delay="500"><span>Доставка оплачивается отдельно</span> цена доставки 6.000 т.р. в пределах всей Московской области.</div>
+					<div data-aos="fade-up" data-aos-delay="400"><span>Защитная экипировка от грязи</span> 500р.</div>
+					<!-- <div data-aos="fade-up" data-aos-delay="500"><span>(Цена указана за полные сутки без учета
+							доставки)</span></div> -->
+					<div data-aos="fade-up" data-aos-delay="500"><span>Доставка оплачивается отдельно</span> цена
+						доставки 6.000 т.р. в пределах всей Московской области.</div>
 
 				</div>
+			</div>
+		</section>
+		<!-- promotion section -->
+		<section class="promotion main-section">
+			<div class="promotion__content main-wrapper">
+				<h2 class="promotion__title content-title">
+					<span>Акции</span>
+				</h2>
+				<ul class="promotion__list main-list">
+					<li>
+						<span class="point"></span>При заказе квадроцикла от 3ёх суток-действует акция 10% + защитная
+						экипировка в подарок
+					</li>
+					<li>
+						<span class="point"></span>При заказе 2ух и более квадроциклов от 3ёх суток- действует акция 10%
+						+ бесплатная доставка + защитная экипировка в подарок
+					</li>
+					<li>
+						<span class="point"></span>10% каждому имениннику (7 дней до и после дня рождения)🥳
+					</li>
+				</ul>
 			</div>
 		</section>
 	</main>
 	<!-- footer section -->
 	<footer class="footer" id="footer">
-		footer and contacts
+		<div class="footer__wrapper main-wrapper">
+			<a class="footer__logo" href="/">
+				<img src="./assets/images/logo.png" alt="Rentday.ru" width="70" height="70">
+			</a>
+			<ul class="footer__navigation">
+				<li><a href="#about">О нас</a></li>
+				<li><a href="#service">Услуги</a></li>
+				<li><a href="#technic">Цены</a></li>
+				<li><a href="#riding">Примущества</a></li>
+				<li><a href="#certifiate">Сертификаты</a></li>
+				<li><a href="#gallery">Фото и видео</a></li>
+				<li><a href="#footer">Контакты</a></li>
+			</ul>
+			<div class="footer__contacts">
+				<h5>Отвечу на все вопросы</h5>
+				<p>
+					Помогу выбрать технику для решения ваших конкретных задач, рассчитаю сроки выполнения работ, стоимость аренды сцетехники с доставкой на обект, составлю договор
+				</p>
+				<h6>Алексей</h6>
+				<div class="location">
+					<img src="./assets/icons/location.svg" alt="Location" width="24" height="24"> Москва
+				</div>
+				<div class="email">
+					<a href="mailto:218@mtarenda.ru"><img src="./assets/icons/email.svg" alt="Email" width="24"
+							height="24">218@mtarenda.ru</a>
+				</div>
+				<div class="phone">
+					<a href="tel:+74991100758"><span>Оффис:</span>+7 (499) 110-07-58</a>
+					<a href="tel:+79295558521"><span>Mобильный: </span>+7 (929) 555-85-21</a>
+				</div>
+				<div class="social">
+					<a href="https://wa.me/74991100758" target="_blank">
+						Напишите мне в WatsApp
+						<img src="./assets/icons/whatsapp.svg" alt="Whatsapp" width="24" height="24">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="main-wrapper">
+				<p>
+					Copyright © 2023 Rentday.ru
+				</p>
+			</div>
+		</div>
 	</footer>
 
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

@@ -40,13 +40,13 @@ const swiper = new Swiper('.our-technics__swiper', {
 	loop: false,
 	effect: "creative",
 	creativeEffect: {
-	  prev: {
-		shadow: true,
-		translate: ["-20%", 0, -1],
-	  },
-	  next: {
-		translate: ["100%", 0, 0],
-	  },
+		prev: {
+			shadow: true,
+			translate: ["-20%", 0, -1],
+		},
+		next: {
+			translate: ["100%", 0, 0],
+		},
 	},
 
 	// Navigation arrows
