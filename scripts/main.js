@@ -57,3 +57,36 @@ const swiper = new Swiper('.our-technics__swiper', {
 });
 
 window.addEventListener('mousemove', parallax)
+
+// menu element in DOM
+const navMenu = document.querySelector('.nav-menu')
+// menu links
+const menuLinks = navMenu.querySelectorAll('li a')
+
+// close menu function
+const closeMenu = () => {
+	burgerButton.classList.remove('_active')
+	navMenu.classList.remove('_active')
+}
+
+// toggle menu function
+const toggleMenu = () => {
+	if (window.innerWidth <= 1024) {
+
+		burgerButton.classList.toggle('_active')
+		navMenu.classList.toggle('_active')
+	}
+
+	for (l of menuLinks) {
+		if (navMenu.classList.contains('_active')) {
+			l.addEventListener('click', closeMenu)
+		} else {
+			l.removeEventListener('click', closeMenu)
+		}
+	}
+
+}
+
+const burgerButton = document.getElementById('burgerButton')
+
+burgerButton.addEventListener('click', toggleMenu)
