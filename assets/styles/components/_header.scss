@@ -9,7 +9,7 @@
 	}
 
 	&-contacts {
-		border-bottom: 1px solid var(--white);
+		border-bottom: 1px solid var(--white-40);
 
 		&__content {
 			color: var(--white);
@@ -88,7 +88,7 @@
 				content: '';
 				width: 0;
 				height: 2px;
-				background: var(--white);
+				background: var(--primary);
 				position: absolute;
 				bottom: -2px;
 				left: 0;

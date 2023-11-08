@@ -2,6 +2,7 @@
 :root {
   --black: #1e1e1e;
   --white: #ffffff;
+  --white-40: rgba(255, 255, 255, .4);
   --primary: #003EA6;
   --primary-5: rgba(0, 62, 166, 0.05);
   --primary-20: rgba(0, 62, 166, 0.2);
@@ -180,7 +181,7 @@ body {
   height: 100px;
 }
 .header-contacts {
-  border-bottom: 1px solid var(--white);
+  border-bottom: 1px solid var(--white-40);
 }
 .header-contacts__content {
   color: var(--white);
@@ -268,7 +269,7 @@ body {
   content: "";
   width: 0;
   height: 2px;
-  background: var(--white);
+  background: var(--primary);
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -283,11 +284,12 @@ body {
 
 .hero {
   width: 100%;
-  height: calc(100vh - 54px);
+  min-height: calc(100vh - 245px);
   background-color: var(--primary-5);
+  padding: 30px 0;
 }
 .hero__content {
-  height: 100%;
+  min-height: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -832,7 +834,7 @@ body {
 .footer__bottom {
   padding-top: 30px;
   margin-top: 30px;
-  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-top: 1px solid var(--white-40);
 }
 .footer__bottom p {
   font-size: 18px;
@@ -860,8 +862,8 @@ body {
   background-repeat: red;
 }
 .gallery__image:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.01) !important;
+          transform: scale(1.01) !important;
 }
 .gallery__image img {
   width: 100%;
