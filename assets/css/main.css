@@ -411,8 +411,8 @@ main {
   }
   .header__burger {
     display: block;
-    width: 30px;
-    height: 20px;
+    width: 25px;
+    height: 15px;
     position: relative;
     background-color: transparent;
   }
@@ -449,7 +449,7 @@ main {
             transform: rotate(-45deg);
     -webkit-transform-origin: bottom left;
             transform-origin: bottom left;
-    bottom: -1px;
+    bottom: -2px;
   }
   .header__burger._active span {
     -webkit-transform: scale(0);

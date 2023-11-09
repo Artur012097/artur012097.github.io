@@ -179,8 +179,8 @@
 
 		&__burger {
 			display: block;
-			width: 30px;
-			height: 20px;
+			width: 25px;
+			height: 15px;
 			position: relative;
 			background-color: transparent;
 
@@ -218,7 +218,7 @@
 				&:after {
 					transform: rotate(-45deg);
 					transform-origin: bottom left;
-					bottom: -1px;
+					bottom: -2px;
 				}
 				span {
 					transform: scale(0);
