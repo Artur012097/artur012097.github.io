@@ -1001,15 +1001,30 @@ main {
 }
 
 @media (max-width: 1024px) {
+  .our-technics {
+    padding-bottom: 64px;
+  }
   .our-technics .swiper-slide h4 {
     font-size: 28px;
     line-height: 32px;
   }
+  .our-technics .swiper-button--prev {
+    top: auto;
+    left: auto;
+    right: 50px;
+    bottom: -50px;
+    z-index: 1;
+  }
+  .our-technics .swiper-button--next {
+    top: auto;
+    right: 10px;
+    bottom: -50px;
+    z-index: 1;
+  }
 }
 @media (max-width: 768px) {
   .our-technics {
-    padding: 24px 0;
-    padding-bottom: 64px;
+    padding-top: 24px;
   }
   .our-technics .swiper-slide {
     -webkit-box-orient: vertical;
@@ -1033,19 +1048,6 @@ main {
     widows: 300px;
     height: 200px;
     margin-bottom: 20px;
-  }
-  .our-technics .swiper-button--prev {
-    top: auto;
-    left: auto;
-    right: 50px;
-    bottom: -50px;
-    z-index: 1;
-  }
-  .our-technics .swiper-button--next {
-    top: auto;
-    right: 10px;
-    bottom: -50px;
-    z-index: 1;
   }
 }
 .swiper {
