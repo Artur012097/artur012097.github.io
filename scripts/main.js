@@ -101,10 +101,6 @@ const removeModal = () => {
 }
 
 const sendMail = (name, from, subj, text) => {
-	const myHeaders = new Headers();
-	myHeaders.append("Content-Type", "application/json");
-	myHeaders.set('Authorization', 'Basic ' + btoa('944d87027a92e8d33bbf513297fc8aa7'+":" +'faec3d6be8d9c9da26136b1931830914'));
-  
 	const data = JSON.stringify({
 	  "Messages": [{
 		"From": {"Email": from, "Name": name},
@@ -115,8 +111,12 @@ const sendMail = (name, from, subj, text) => {
 	});
 
 	const requestOptions = {
+		mode: "cors",
 		method: 'POST',
-		headers: myHeaders,
+		headers: {
+			"Content-Type": "application/json",
+			"Authorization": `Basic ${btoa('944d87027a92e8d33bbf513297fc8aa7:faec3d6be8d9c9da26136b1931830914')})`
+		},
 		body: data,
 	  };
 
