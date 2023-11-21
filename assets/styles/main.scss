@@ -61,6 +61,20 @@ main {
 	overflow: hidden;
 }
 
+.input-row {
+	position: relative;
+	
+	&__error {
+		display: block;
+		font-size: 12px;
+		font-weight: 400;
+		color: red;
+		position: absolute;
+		bottom: -16px;
+	}
+}
+
+
 .main-wrapper {
 	max-width: 1260px;
 	margin: 0 auto;
@@ -112,6 +126,11 @@ main {
 		svg {
 			transform: translateX(3px);
 		}
+	}
+
+	&:disabled {
+		opacity: .4;
+		cursor: not-allowed;
 	}
 
 	@media (max-width: 1260px) {

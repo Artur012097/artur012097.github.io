@@ -128,11 +128,29 @@
 		margin-top: 30px;
 		border-top: 1px solid var(--white-40);
 
+		.main-wrapper {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
 		p {
 			font-size: 18px;
 			font-weight: 500;
 			color: var(--white);
+		}
+		
+		.site__author {
+			display: flex;
+			align-items: center;
+			font-size: 15px;
+			font-weight: 400;
+			color: var(--white);
 
+			img {
+				margin-left: 10px;
+			}
 		}
 	}
 }

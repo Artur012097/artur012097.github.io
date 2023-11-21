@@ -93,6 +93,18 @@ main {
   overflow: hidden;
 }
 
+.input-row {
+  position: relative;
+}
+.input-row__error {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  color: red;
+  position: absolute;
+  bottom: -16px;
+}
+
 .main-wrapper {
   max-width: 1260px;
   margin: 0 auto;
@@ -156,6 +168,10 @@ main {
 .main-button:hover svg {
   -webkit-transform: translateX(3px);
           transform: translateX(3px);
+}
+.main-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 @media (max-width: 1260px) {
   .main-button {
@@ -993,6 +1009,7 @@ main {
 @media (max-width: 768px) {
   .our-technics {
     padding: 24px 0;
+    padding-bottom: 64px;
   }
   .our-technics .swiper-slide {
     -webkit-box-orient: vertical;
@@ -1016,6 +1033,19 @@ main {
     widows: 300px;
     height: 200px;
     margin-bottom: 20px;
+  }
+  .our-technics .swiper-button--prev {
+    top: auto;
+    left: auto;
+    right: 50px;
+    bottom: -50px;
+    z-index: 1;
+  }
+  .our-technics .swiper-button--next {
+    top: auto;
+    right: 10px;
+    bottom: -50px;
+    z-index: 1;
   }
 }
 .swiper {
@@ -1388,10 +1418,36 @@ main {
   margin-top: 30px;
   border-top: 1px solid var(--white-40);
 }
+.footer__bottom .main-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .footer__bottom p {
   font-size: 18px;
   font-weight: 500;
   color: var(--white);
+}
+.footer__bottom .site__author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--white);
+}
+.footer__bottom .site__author img {
+  margin-left: 10px;
 }
 
 @media (max-width: 768px) {
@@ -1542,6 +1598,12 @@ main {
   right: 10px;
   cursor: pointer;
 }
+.modal__success {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--black);
+  text-align: center;
+}
 .modal-content {
   max-width: 500px;
   width: 100%;
@@ -1558,7 +1620,6 @@ main {
   height: 40px;
   margin-top: 30px;
 }
-.modal-content input,
-.modal-content textarea {
+.modal-content .input-row {
   margin-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */

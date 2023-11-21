@@ -28,6 +28,13 @@
 		cursor: pointer;
 	}
 
+	&__success {
+		font-size: 15px;
+		font-weight: 500;
+		color: var(--black);
+		text-align: center;
+	}
+
 	&-content {
 		max-width: 500px;
 		width: 100%;
@@ -43,8 +50,7 @@
 			margin-top: 30px;
 		}
 
-		input,
-		textarea {
+		.input-row {
 			margin-bottom: 20px;
 		}
 	}
