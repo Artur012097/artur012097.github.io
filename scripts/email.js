@@ -1,5 +1,5 @@
 const sendMail = ({ data, template, successText }) => {
-	const serviceId = 'service_cvcx775'
+	const serviceId = 'service_r7sxour'
 	const btn = document.querySelector('.modal-button')
 	const btnText = btn.innerText
 	btn.innerText = 'Отправка...'
@@ -95,7 +95,7 @@ const createOrderModal = (model) => {
 					model,
 				},
 				successText: 'Ваш заказ отправлен на почту, мы скоро с вами свяжемся',
-				template: 'template_wnr3p67'
+				template: 'template_0lifyhr'
 			})
 		}
 	})
@@ -143,7 +143,7 @@ const createSupportModal = () => {
 					phone,
 				},
 				successText: 'Ваша заявка отправлена, мы скоро с вами свяжемся',
-				template: 'template_daeq4u7'
+				template: 'template_fnitgqt'
 			})
 		}
 
