@@ -1,5 +1,5 @@
 const sendMail = ({ data, template, successText }) => {
-	const serviceId = 'service_r7sxour'
+	const serviceId = 'service_gshazpb'
 	const btn = document.querySelector('.modal-button')
 	const btnText = btn.innerText
 	btn.innerText = 'Отправка...'
