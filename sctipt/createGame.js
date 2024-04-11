@@ -1043,8 +1043,8 @@ const createGame = (props) => {
 		try {
 			const payload = {
 				id: props?.gameData?.id,
-				experience: score,
-				gotCoin: coin.collected,
+				exp: score,
+				got_coin: coin.collected,
 				referer: props?.refererCode ?? null,
 			}
 			const saved = await fetch(`${props?.api}/api/games/5d1afcb3/set_result/`, {
