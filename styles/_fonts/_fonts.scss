@@ -1,0 +1,41 @@
+@import '../_mixins/font-face';
+
+@include font(
+  'Manrope-Regular',
+  'normal',
+  400,
+  '/fonts/Manrope-Regular.woff2',
+  '/fonts/Manrope-Regular.woff',
+  '/fonts/Manrope-Regular.eot',
+  '/fonts/Manrope-Regular.ttf'
+);
+
+@include font(
+  'Manrope-Medium',
+  'normal',
+  500,
+  '/fonts/Manrope-Medium.woff2',
+  '/fonts/Manrope-Medium.woff',
+  '/fonts/Manrope-Medium.eot',
+  '/fonts/Manrope-Medium.ttf'
+);
+
+@include font(
+  'Manrope-SemiBold',
+  'normal',
+  600,
+  '/fonts/Manrope-SemiBold.woff2',
+  '/fonts/Manrope-SemiBold.woff',
+  '/fonts/Manrope-SemiBold.eot',
+  '/fonts/Manrope-SemiBold.ttf'
+);
+
+@include font(
+  'Manrope-Bold',
+  'normal',
+  700,
+  '/fonts/Manrope-Bold.woff2',
+  '/fonts/Manrope-Bold.woff',
+  '/fonts/Manrope-Bold.eot',
+  '/fonts/Manrope-Bold.ttf'
+);

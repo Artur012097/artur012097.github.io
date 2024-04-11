@@ -1,0 +1,53 @@
+.f-spinner {
+	// @apply w-full h-full flex justify-center items-center bg-white-100 bg-opacity-40 absolute top-0 left-0 z-1;
+  
+	svg {
+	  animation: size 1.5s infinite linear;
+	  overflow: visible;
+	  transform: scale(1);
+	  width: 40px;
+	}
+  
+	&__fill {
+	  animation: drop-shadow-blink 1.5s infinite linear;
+	  fill: white;
+	  filter: drop-shadow(0 0 2px blue);
+	}
+  
+	&__fill {
+	  &--animated {
+		animation: fill-blink 1.5s infinite linear;
+		fill: blue;
+	  }
+	}
+  
+	&__inner-shadow {
+	  fill: transparent;
+	  stroke: transparent;
+	  stroke-width: 2px;
+	  filter: drop-shadow(0 0 1px blue);
+	}
+  }
+
+  @keyframes fill-blink {
+	0%,
+	100% {
+	  opacity: 0;
+	}
+  
+	75% {
+	  opacity: 0.45;
+	}
+  }
+
+  @keyframes drop-shadow-blink {
+	0%,
+	90%,
+	100% {
+	  filter: drop-shadow(0 0 6px rgb(104, 104, 255));
+	}
+  
+	75% {
+	  filter: drop-shadow(0 0 3px blue);
+	}
+  }

@@ -1,13 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title></title>
+  <meta charset="utf-8" />
+  <meta name="title" content="Fennec game" />
+  <meta name="description" content="Try your best skills to get coins" />
+  <meta name="og:title" content="Fennec game" />
+  <meta name="og:description" content="Try your best skills to get coins" />
+  <meta name="og:image" content="https://rate.club/images/social-sharing/sharing-logo-square.png" />
+  <meta name="og:image:width" content="300" />
+  <meta name="og:image:height" content="300" />
+  <meta name="og:image:type" content="image/png" />
+  <meta name="og:image:alt" content="Feed fennec" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@TheRateClub" />
+  <meta name="twitter:title" content="Fennec game" />
+  <meta name="twitter:description" content="Try your best skills to get coins" />
+  <meta name="twitter:image" content="https://rate.club/images/social-sharing/sharing-logo-square.png" />
+  <meta name="twitter:image:width" content="300" />
+  <meta name="twitter:image:height" content="300" />
+  <title>Feed the fennec</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        borderRadius: {
+          none: '0',
+          xs: '4px',
+          sm: '8px',
+          md: '16px',
+          full: '100%',
+        },
+        fontSize: {
+          xs: ['13px', '18px'],
+          sm: ['15px', '22px'],
+          md: ['16px', '26px'],
+          lg: ['18px', '28px'],
+          xl: ['20px', '30px'],
+          11: ['11px', '14px'],
+          12: ['12px', '14.5px'],
+          24: ['24px', '34px'],
+          32: ['32px', '44px'],
+        },
+        colors: {
+          transparent: 'transparent',
+          black: {
+            100: '#000000',
+            80: '#111827',
+            60: '#4B5563',
+            40: '#6B7280',
+            20: '#9CA3AF',
+          },
+          white: {
+            100: '#FEFEFE',
+            90: '#FDFDFE',
+            80: '#F9FAFB',
+            60: '#F8F9FE',
+            40: '#E5E7EB',
+            20: '#C9CBDF',
+          },
+          blue: {
+            100: '#003EA6',
+            80: '#385FEA',
+            60: '#CED7FA',
+            40: '#DFECFF',
+            30: '#2B49B3',
+            20: '#D0E3F4',
+            10: '#EAEEF9',
+            twitter: '#1DA1F2',
+          },
+        },
+        spacing: {
+          0: '0',
+          5: '5px',
+          4: '4px',
+          8: '8px',
+          10: '10px',
+          15: '15px',
+          18: '18px',
+          20: '20px',
+          24: '24px',
+          30: '30px',
+          40: '40px',
+        },
+      }
+    }
+  </script>
 </head>
+
 <body>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="main.js"></script>
+  <div class="f-game w-screen h-screen bg-[url(/public/images/bg.png)] bg-no-repeat bg-cover relative" id="wrapper"></div>
+  <script type="module" src="./sctipt/main.js"></script>
 </body>
+
 </html>
