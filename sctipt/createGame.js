@@ -1081,24 +1081,32 @@ const createGame = (props) => {
 		timer.time = 120
 	}
 
-	const clearWrapper = () => {
+	const clearGameComponents = () => {
 		components.container.removeEventListener('mousedown', handleSwipeStart)
 		components.container.removeEventListener('touchstart', handleSwipeStart)
 		components.container.removeEventListener('mouseup', handleSwipeEnd)
 		components.container.removeEventListener('touchend', handleSwipeEnd)
-		components.container.innerHTML = ''
+		components.wrapper.innerHTML = '',
+		components.container = document.createElement("div"),
+		components.gWrapper = document.createElement("div"),
+		components.cursor = document.createElement("div"),
+		components.header = document.createElement("div"),
+		components.footer = document.createElement("div"),
+		components.timer = document.createElement("div"),
+		components.score = document.createElement("div"),
+		components.targets = document.createElement("div"),
 		components.blocks = []
 	}
 
 	const repeatGame = async () => {
 		clearData()
-		clearWrapper()
+		clearGameComponents()
 		await startRound()
 	}
 
 	const backToIntro = async () => {
 		clearData()
-		clearWrapper()
+		clearGameComponents()
 		createIntro({
 			api: props?.api,
 			token: props?.token,
