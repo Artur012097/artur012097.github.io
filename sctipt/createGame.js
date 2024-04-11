@@ -1079,6 +1079,8 @@ const createGame = (props) => {
 		config.checking = false
 		timer.interval = null
 		timer.time = 120
+		score = 0
+		firstTargetEvent = null
 	}
 
 	const clearGameComponents = () => {
