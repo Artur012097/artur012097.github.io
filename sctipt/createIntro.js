@@ -1,6 +1,7 @@
 import { createGame } from './createGame.js'
 import { createShare } from './createShare.js'
 import { createSpinner } from './createSpinner.js'
+import { fullScreenHandler } from './fullScreenHandlers.js'
 
 const levelIdent = 1000
 // count of progress indicator
@@ -91,7 +92,6 @@ const createIntro = async (props) => {
 			throw new Error(e)
 		}
 	}
-
 	
 	// calculate filled index
 	const filledIndex =
@@ -147,8 +147,14 @@ const createIntro = async (props) => {
 	</div>
   </div>`
 
-	createIndicators(indicatorsCount, percentOfFill(), filledIndex(), startRound)
-  document.querySelector('#showRefs').addEventListener('click', () => createShare({ ...props, profile: currentProfile }))
+	createIndicators(indicatorsCount, percentOfFill(), filledIndex(), async () => {
+		await fullScreenHandler()
+		startRound()
+	})
+  document.querySelector('#showRefs').addEventListener('click', async () => {
+	await fullScreenHandler()
+	createShare({ ...props, profile: currentProfile })
+})
 
   
   const backButton = document.querySelector('#gameBack')
