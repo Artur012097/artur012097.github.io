@@ -52,7 +52,7 @@
   .input input:focus ~ label,
   .input input:not(:placeholder-shown) ~ label {
 	  top: 1px;
-	  font-size: 12px;
+	  font-size: 12px; 
   }
 
   input {
