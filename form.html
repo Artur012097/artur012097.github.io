@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./assets/styles.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<title>NovelX</title>
+</head>
+<body>
+	<div class="main-wrapper">
+		<header>
+			<a href="#">
+				<img src="./assets/img/logo.png" alt="NovoleX" width="216" height="72"/>
+			</a>
+		</header>
+		<main>
+			<div class="contact-form content-wrapper">
+				<div class="hero">
+					<h1 class="font-black">
+						Be prepared <br>
+						for a new <br> experience
+					</h1>
+					<h2 class="font-regular">
+						We will contact you as soon as possible once we receive State clearance in your country
+					</h2>
+				</div>
+				<div class="contact-form__content">
+					<div class="contact-form__success">
+						<img src="./assets/img/checkmark.svg" alt="Checkmark">
+						<h3 class="font-black">
+							Your application <br>
+							has been accepted
+						</h3>
+						<button class="button done-btn">
+							Done
+						</button>
+					</div>
+					<form class="form">
+						<div class="form-container">
+							<div class="input">
+								<input type="text" placeholder="">
+								<label>
+									First and last name
+								</label>
+							</div>
+							<div class="input">
+								<input type="text" placeholder="">
+								<label>
+									E-mail
+								</label>
+							</div>
+							<div class="dropdown">
+								<button class="dropdown__button" type="button">All</button>
+								<div class="dropdown__list">
+									<ul class="dropdown__list-content">
+									  <li class="dropdown__list-item" data-value="BBB">BBB</li>
+									  <li class="dropdown__list-item" data-value="CCC">CCC</li>
+									  <li class="dropdown__list-item" data-value="DDD">DDD</li>
+									  <li class="dropdown__list-item" data-value="FFF">FFF</li>
+									  <li class="dropdown__list-item" data-value="FFF">FFF</li>
+									  <li class="dropdown__list-item" data-value="FFF">FFF</li>
+									  <li class="dropdown__list-item" data-value="FFF">FFF</li>
+									</ul>
+								</div>
+								<input class="dropdown__input_hidden" type="text" name="select-category" value="">
+							  </div>
+							  <div class="dropdown">
+								  <button class="dropdown__button" type="button">All</button>
+								  <div class="dropdown__list">
+									<div class="dropdown__search">
+										<input type="text" placeholder="Search...">
+										<img src="./assets/img/search.svg" alt="Search">
+									</div>
+									<ul class="dropdown__list-content">
+										<li class="dropdown__list-item" data-value="BBB">BBB</li>
+										<li class="dropdown__list-item" data-value="CCC">CCC</li>
+										<li class="dropdown__list-item" data-value="DDD">DDD</li>
+										<li class="dropdown__list-item" data-value="FFF">FFF</li>
+										<li class="dropdown__list-item" data-value="FFF">FFF</li>
+										<li class="dropdown__list-item" data-value="FFF">FFF</li>
+										<li class="dropdown__list-item" data-value="FFF">FFF</li>
+									</ul>
+								  </div>
+								  <input class="dropdown__input_hidden" type="text" name="select-category" value="">
+								</div>
+							<div class="input">
+								<input type="text" placeholder="">
+								<label>
+									Name of the medical centre
+								</label>
+							</div>
+							<div class="input">
+								<input type="text" placeholder="">
+								<label>
+									Position
+								</label>
+							</div>
+							<div class="phone-input-container">
+								<div class="flag" id="flag"></div>
+								<select class="country-code" id="country-code">
+									<option value="+355" data-flag="al" data-placeholder="(123) 456-789">+355</option>
+									<option value="+1" data-flag="us" data-placeholder="(123) 456-7890">+1</option>
+									<option value="+44" data-flag="gb" data-placeholder="1234 567 890">+44</option>
+									<option value="+49" data-flag="de" data-placeholder="123 4567890">+49</option>
+									<option value="+33" data-flag="fr" data-placeholder="123 45 67 89">+33</option>
+								</select>
+								<input class="phone-number" type="tel" id="phone-input" placeholder="(123) 456-789">
+							</div>
+						</div>
+						<span class="if font-regular">
+							If available
+						</span>
+						<button type="submit" class="button submit-btn">Send</button>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<span class="font-light">
+				NoveLX Inc, 166 Geary str. STE 1500 336, San Francisco CA 94108
+			</span>
+			<a href="mailto:info@novelxmedical.com" class="font-light">info@novelxmedical.com</a>
+		</footer>
+	</div>
+</body>
+
+<script src="./scripts/dropdown.js"></script>
+<script src="./scripts/main.js"></script>
+</html>

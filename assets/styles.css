@@ -4,7 +4,17 @@
 	outline: none;
 	border: none;
 	text-decoration: none;
+	box-sizing: border-box;
+	font-family: "Figtree", serif;
 	transition: all .2s ease;
+  }
+
+  :root {
+	--black: #1D1D1B;
+	--white: #FFFFFF;
+	--green: #B4D57C;
+	--gray: '#F3F3F3';
+	--gray-dark: '#989898';
   }
 
   button:hover {
@@ -12,18 +22,46 @@
 	opacity: .9;
   }
 
-  body {
-	background-image: url('./img/bg.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: right;
+  input,
+  select  {
+	width: 100%;
+	height: 46px;
+	border-radius: 10px;
+	padding: 14px;
+	font-size: 16px;
+	line-height: 19.2px;
+	font-weight: 400;
   }
 
-  :root {
-	--black: #1D1D1B;
-	--white: #FFFFFF;
-	--green: #B4D57C;
+  .input {
+	width: 100%;
+	position: relative;
+  }
 
+  .input label {
+	  position: absolute;
+	  top: 13px;
+	  left: 13px;
+	  font-size: 16px;
+	  color: #989898;
+	  pointer-events: none;
+	  transition: 0.2s ease all;
+  }
+
+  /* Стили для активного состояния (когда в фокусе или заполнено) */
+  .input input:focus ~ label,
+  .input input:not(:placeholder-shown) ~ label {
+	  top: 1px;
+	  font-size: 12px;
+  }
+
+  input {
+	border: 1px solid var(--white);
+	padding-bottom: 12px;
+  }
+
+  input.error {
+	border-color: red;
   }
   
   .font-light {
@@ -62,7 +100,7 @@
 	font-style: normal;
   }
   
-  .content-wrapper {
+  .main-wrapper {
 	max-width: 1072px;
 	width: 100%;
 	height: 100vh;
@@ -71,7 +109,17 @@
   }
   
   header {
-	margin-bottom: 30px;
+	margin-bottom: 26px;
+	padding-top: 12px;
+  }
+
+  .main-page {
+	width: 100%;
+	height: 100%;
+	background-image: url('./img/bg.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
   }
 
   .hero {
@@ -89,20 +137,27 @@
   .hero h2 {
 	color: var(--black);
 	font-size: 34px;
-	margin-top: 14px;
+	line-height: 42px;
+	margin-top: 24px;
   }
 
-  .hero button {
-	width: 254px;
+  .button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	height: 46px;
 	background-color: var(--green);
 	color: var(--white);
 	font-size: 16px;
-	margin-top: 42px;
 	border-radius: 10px;
-  }
+}
+
+.hero .button {
+	width: 254px;
+	margin-top: 42px;
+}
   
-  footer {
+footer {
 	width: 100%;
 	position: absolute;
 	bottom: 0;
@@ -117,3 +172,230 @@ footer span {
 	font-size: 16px;
 	color: var(--black);
   }
+
+.contact-form.content-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contact-form .hero {
+	max-width: 524px;
+}
+
+.contact-form .hero {
+	max-width: 524px;
+}
+
+.contact-form .hero h1 {
+	margin-top: 0;
+}
+
+.contact-form__content {
+	max-width: 470px;
+	width: 100%;
+	height: 506px;
+	position: relative;
+	background-color: #F3F3F3;
+	border-radius: 28px;
+	padding: 20px;
+}
+
+.contact-form__content .form {
+	width: 100%;
+}
+
+.contact-form__success {
+	padding-top: 212px;
+	display: none;
+}
+
+.contact-form__success img {
+	position: absolute;
+	top: -60px;
+    left: 140px;
+}
+
+.contact-form__success h3 {
+	font-size: 34px;
+	line-height: 38.8px;
+	color: var(--black);
+	text-align: center;
+}
+
+.contact-form__success .button {
+	width: 100%;
+	margin-top: 45px;
+}
+
+.contact-form .form-container {
+	width: 100%;
+	display: grid;
+	gap: 10px;
+}
+
+.contact-form .if {
+	font-size: 12px;
+	color: #8F8F8F;
+}
+
+.contact-form .form .button {
+	width: 100%;
+	margin-top: 18px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown__button {
+	width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: "Figtree", serif;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: #444444;
+  text-align: left;
+  background: #ffffff;
+  border: 1px solid #e6eaed;
+  border-radius: 4px;
+  height: 46px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 40px;
+  border-radius: 10px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.dropdown__button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background: url('./img/arrow.svg') 100% 100%;
+  pointer-events: none;
+  transition: 200ms ease;
+}
+
+.dropdown__button_active::after {
+  transform: translateY(-50%) rotate(-180deg);
+}
+
+.dropdown__list {
+	width: 100%;
+	position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  left: 0;
+  top: 46px;
+  box-shadow: 0px 10px 20px 0px #88919d4d;
+  border: 1px solid #e6eaed;
+  border-radius: 4px;
+  background: #ffffff;
+  overflow: hidden;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: 200ms ease;
+  border-radius: 10px;
+}
+
+.dropdown__list-content {
+	max-height: 200px;
+	overflow-y: auto;
+}
+
+.dropdown__search {
+	width: 100%;
+	position: relative;
+	border-bottom: 1px solid #E1E1E1;
+}
+
+.dropdown__search img {
+	position: absolute;
+	transform: translateY(-50%);
+	top: 50%;
+	right: 10px;
+}
+
+.dropdown__list_visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown__list-item {
+  margin: 0;
+  padding: 0;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 18px;
+  color: #444444;
+  transition: 200ms ease;
+}
+
+.dropdown__list-item_active {
+  background: #f5f8fa;
+}
+
+.dropdown__list-item:hover {
+  background: #f5f8fa90;
+}
+
+.dropdown__input_hidden {
+  display: none;
+}
+
+.phone-input-container {
+	width: 100%;
+	height: 46px;
+	display: flex;
+	align-items: center;
+	background: #ffffff;
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+	padding: 5px 10px;
+}
+
+.flag {
+	width: 24px;
+	height: 16px;
+	background-image: url('https://flagcdn.com/w20/al.png'); /* Albania flag example */
+	background-size: cover;
+	border-radius: 3px;
+	margin-right: 8px;
+}
+
+.country-code {
+	width: 70px;
+	border: none;
+	font-size: 16px;
+	background: none;
+	margin-right: 5px;
+	padding: 0;
+	cursor: pointer;
+}
+
+.phone-number {
+	flex: 1;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	background: none;
+}
+
+.optional-text {
+	font-size: 12px;
+	color: #aaa;
+	margin-top: 5px;
+}
