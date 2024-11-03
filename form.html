@@ -53,7 +53,10 @@
 								</label>
 							</div>
 							<div class="dropdown">
-								<button class="dropdown__button" type="button">All</button>
+								<label>
+									Country
+								</label>
+								<button class="dropdown__button" type="button"></button>
 								<div class="dropdown__list">
 									<ul class="dropdown__list-content">
 									  <li class="dropdown__list-item" data-value="BBB">BBB</li>
@@ -67,22 +70,17 @@
 								</div>
 								<input class="dropdown__input_hidden" type="text" name="select-category" value="">
 							  </div>
-							  <div class="dropdown">
-								  <button class="dropdown__button" type="button">All</button>
+							  <div class="dropdown" id="countries">
+								<label>
+									City
+								</label>
+								  <button class="dropdown__button" type="button"></button>
 								  <div class="dropdown__list">
 									<div class="dropdown__search">
 										<input type="text" placeholder="Search...">
 										<img src="./assets/img/search.svg" alt="Search">
 									</div>
-									<ul class="dropdown__list-content">
-										<li class="dropdown__list-item" data-value="BBB">BBB</li>
-										<li class="dropdown__list-item" data-value="CCC">CCC</li>
-										<li class="dropdown__list-item" data-value="DDD">DDD</li>
-										<li class="dropdown__list-item" data-value="FFF">FFF</li>
-										<li class="dropdown__list-item" data-value="FFF">FFF</li>
-										<li class="dropdown__list-item" data-value="FFF">FFF</li>
-										<li class="dropdown__list-item" data-value="FFF">FFF</li>
-									</ul>
+									<ul class="dropdown__list-content"></ul>
 								  </div>
 								  <input class="dropdown__input_hidden" type="text" name="select-category" value="">
 								</div>
@@ -127,6 +125,7 @@
 	</div>
 </body>
 
-<script src="./scripts/dropdown.js"></script>
-<script src="./scripts/main.js"></script>
+<script src="./scripts/countries-dropdown.js"></script>
+<script src="./scripts/dropdown.js" defer></script>
+<script src="./scripts/main.js" defer></script>
 </html>
