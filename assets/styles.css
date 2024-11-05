@@ -27,7 +27,7 @@
 	width: 100%;
 	height: 46px;
 	border-radius: 10px;
-	padding: 14px;
+	padding: 14px 14px 0 13px;
 	font-size: 16px;
 	line-height: 19.2px;
 	font-weight: 400;
@@ -52,20 +52,33 @@
 	  transition: 0.2s ease all;
   }
 
-  /* Стили для активного состояния (когда в фокусе или заполнено) */
-  .input input:focus ~ label,
-  .input input:not(:placeholder-shown) ~ label {
-	  top: 5px;
-	  font-size: 12px; 
-  }
-
   input {
 	border: 1px solid var(--white);
-	padding-bottom: 0;
+	padding-top: 17px;
+  }
+
+  input::placeholder {
+	color: #989898;
+  }
+
+  input:hover {
+	border-color: #C6C6C6;
+  }
+
+  input:focus {
+	border-color: #B4D57C;
   }
 
   input.error {
 	border-color: red;
+  }
+
+  /* Стили для активного состояния (когда в фокусе или заполнено) */
+  .input input:focus ~ label,
+  .input input:not(:placeholder-shown) ~ label {
+	  top: 5px;
+	  left: 14px;
+	  font-size: 12px; 
   }
   
   .font-light {
@@ -156,6 +169,10 @@
 	border-radius: 10px;
 }
 
+.button:hover {
+	background-color: #A8C96F;
+}
+
 .hero .button {
 	width: 254px;
 	margin-top: 42px;
@@ -210,7 +227,7 @@ footer span {
 
 .contact-form .form .if {
 	display: block;
-	padding-top: 4px;
+	padding-top: 6px;
 }
 
 .contact-form__success {
@@ -259,6 +276,12 @@ footer span {
 	position: relative;
 }
 
+.dropdown input {
+	border: none !important;
+	border-radius: 0;
+	padding-top: 0 !important;
+}
+
 .dropdown label {
 	position: absolute;
 	top: 14px;
@@ -272,14 +295,15 @@ footer span {
 
 .dropdown label.active {
 	font-size: 12px;
-	top: 2px;
+	top: 6px;
+    left: 14px;
 }
 
 .dropdown__button {
 	width: 100%;
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   font-family: "Figtree", serif;
   font-size: 16px;
   line-height: 19.2px;
@@ -289,7 +313,7 @@ footer span {
   border: 1px solid #ffffff;
   border-radius: 4px;
   height: 46px;
-  padding: 10px 40px 0 15px;
+  padding: 10px 40px 4px 13px;
   border-radius: 10px;
   margin: 0;
   cursor: pointer;
@@ -306,6 +330,14 @@ footer span {
   background: url('./img/arrow.svg') 100% 100%;
   pointer-events: none;
   transition: 200ms ease;
+}
+
+.dropdown__button:hover {
+	border-color: #C6C6C6;
+}
+
+.dropdown__button_active {
+	border-color: #B4D57C;
 }
 
 .dropdown__button_active::after {
@@ -340,7 +372,7 @@ footer span {
 }
 
 .dropdown__search input {
-	padding: 10px;
+	padding: 10px 10px 0px 13px;
 }
 
 .dropdown__list-item {
@@ -401,12 +433,12 @@ footer span {
 	background: #ffffff;
 	border: 1px solid #ffffff;
 	border-radius: 10px;
-	padding: 5px 10px;
+	padding: 5px 10px 5px 13px;
 }
 
 .flag {
-	width: 24px;
-	height: 16px;
+	width: 26px;
+	height: 18px;
 	background-image: url('https://flagcdn.com/w20/al.png'); /* Albania flag example */
 	background-size: cover;
 	border-radius: 3px;
