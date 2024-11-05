@@ -13,7 +13,7 @@
 	<div class="main-wrapper">
 		<header>
 			<a href="#">
-				<img src="./assets/img/logo.png" alt="NovoleX" width="216" height="72"/>
+				<img src="./assets/img/logo.svg" alt="NovoleX" width="216" height="72"/>
 			</a>
 		</header>
 		<main>
@@ -34,7 +34,7 @@
 							Your application <br>
 							has been accepted
 						</h3>
-						<button class="button done-btn">
+						<button class="button done-btn font-semibold">
 							Done
 						</button>
 					</div>
@@ -52,37 +52,37 @@
 									E-mail
 								</label>
 							</div>
-							<div class="dropdown">
+							<div class="dropdown" id="countries">
 								<label>
 									Country
 								</label>
 								<button class="dropdown__button" type="button"></button>
 								<div class="dropdown__list">
-									<ul class="dropdown__list-content">
-									  <li class="dropdown__list-item" data-value="BBB">BBB</li>
-									  <li class="dropdown__list-item" data-value="CCC">CCC</li>
-									  <li class="dropdown__list-item" data-value="DDD">DDD</li>
-									  <li class="dropdown__list-item" data-value="FFF">FFF</li>
-									  <li class="dropdown__list-item" data-value="FFF">FFF</li>
-									  <li class="dropdown__list-item" data-value="FFF">FFF</li>
-									  <li class="dropdown__list-item" data-value="FFF">FFF</li>
-									</ul>
+								  <div class="dropdown__search">
+									  <input type="text" placeholder="Search">
+									  <img src="./assets/img/search.svg" alt="Search">
+								  </div>
+								  <ul class="dropdown__list-content"></ul>
 								</div>
-								<input class="dropdown__input_hidden" type="text" name="select-category" value="">
+								<input class="dropdown__input_hidden" type="text" name="select-country" value="">
 							  </div>
-							  <div class="dropdown" id="countries">
+							  <div class="dropdown" >
 								<label>
 									City
 								</label>
 								  <button class="dropdown__button" type="button"></button>
 								  <div class="dropdown__list">
-									<div class="dropdown__search">
-										<input type="text" placeholder="Search...">
-										<img src="./assets/img/search.svg" alt="Search">
-									</div>
-									<ul class="dropdown__list-content"></ul>
+									  <ul class="dropdown__list-content">
+										<li class="dropdown__list-item" data-value="BBB">BBB</li>
+										<li class="dropdown__list-item" data-value="CCC">CCC</li>
+										<li class="dropdown__list-item" data-value="DDD">DDD</li>
+										<li class="dropdown__list-item" data-value="FFF">FFF</li>
+										<li class="dropdown__list-item" data-value="FFF">FFF</li>
+										<li class="dropdown__list-item" data-value="FFF">FFF</li>
+										<li class="dropdown__list-item" data-value="FFF">FFF</li>
+									  </ul>
 								  </div>
-								  <input class="dropdown__input_hidden" type="text" name="select-category" value="">
+								  <input class="dropdown__input_hidden" type="text" name="select-city" value="">
 								</div>
 							<div class="input">
 								<input type="text" placeholder="">
@@ -111,7 +111,7 @@
 						<span class="if font-regular">
 							If available
 						</span>
-						<button type="submit" class="button submit-btn">Send</button>
+						<button type="submit" class="button submit-btn font-semibold">Send</button>
 					</form>
 				</div>
 			</div>
@@ -126,6 +126,7 @@
 </body>
 
 <script src="./scripts/countries-dropdown.js"></script>
+<script src="./scripts/phone-dropdown.js"></script>
 <script src="./scripts/dropdown.js" defer></script>
 <script src="./scripts/main.js" defer></script>
 </html>
