@@ -7,6 +7,24 @@
 	box-sizing: border-box;
 	font-family: "Figtree", serif;
 	transition: all .2s ease;
+	/* Firefox */
+	scrollbar-width: auto;
+	scrollbar-color: #a9a9a9 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #a9a9a9;
+    border-radius: 4px;
+    border: 3px solid #ffffff;
   }
 
   :root {
@@ -40,6 +58,11 @@
   .input {
 	width: 100%;
 	position: relative;
+	font-size: 15px;
+  }
+
+  input::placeholder {
+	font-size: inherit;
   }
 
   .input label {
@@ -411,18 +434,18 @@ footer span {
   padding: 0;
   padding: 15px;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 18px;
   color: #444444;
   transition: 200ms ease;
 }
 
 .dropdown__list-item_active {
-  background: #f5f8fa;
+	background: #F0F9E2;
 }
 
 .dropdown__list-item:hover {
-	background: #F0F9E2;
+	background: #f5f8fa;
 }
 
 .dropdown__input_hidden {
@@ -482,11 +505,12 @@ footer span {
 
 @media (max-width: 840px) {
 	.main-page {
-		background-image: none;
+		background-image: url('./img/bg_sm.png');
 	}
 
 	header {
 		padding-top: 0;
+		margin-bottom: 27px;
 	}
 
 	.main-logo--lg {
@@ -502,7 +526,7 @@ footer span {
 	}
 
 	.hero {
-		margin-bottom: 24px;
+		margin-bottom: 28px;
 	}
 
 	.hero h1 {
@@ -517,12 +541,16 @@ footer span {
 	.hero h2 {
 		font-size: 20px;
 		line-height: 24px;
-		margin-top: 18px;
+		margin-top: 16px;
 	}
 
 	.hero .button {
 		width: 100%;
-		margin-top: 26px;
+		margin-top: 27px;
+	}
+
+	.contact-form__success {
+		padding-top: 209px;
 	}
 
 	.contact-form.content-wrapper {
@@ -542,8 +570,9 @@ footer span {
 
 	.contact-form__success img {
 		width: 174px;
-		top: 59px;
-    	left: 84px;
+		top: 56px;
+    	transform: translateX(-50%);
+		left: 50%;
 	}
 
 	.contact-form__success h3 {
@@ -560,13 +589,31 @@ footer span {
 		position: relative;
 		flex-direction: column;
 		align-items: flex-start;
-		margin-top: 38px;
-		gap: 4px;
+		margin-top: 37px;
+		padding-bottom: 15px;
+		gap: 6px;
+		padding-right: 15px;
 	}
 
 	footer a,
 	footer span {
 		font-size: 14px;
 		line-height: 18px;
+	}
+
+	.input label,
+	.dropdown label {
+		left: 14px;
+	}
+}
+
+@media (max-width: 320px) {
+	.main-page {
+		background-position: 1px 65px;
+	}
+
+	.contact-form__success img {
+		transform: translate(0);
+		left: 84px;
 	}
 }
