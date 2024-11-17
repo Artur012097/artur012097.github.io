@@ -35,6 +35,12 @@
 	--gray-dark: '#989898';
   }
 
+  html,
+  body {
+	  height: 100%;
+	  margin: 0;
+  }
+
   button:hover {
 	cursor: pointer;
 	opacity: .9;
@@ -43,22 +49,22 @@
   input,
   select  {
 	width: 100%;
-	height: 46px;
-	border-radius: 10px;
-	padding: 14px 14px 0 13px;
-	font-size: 16px;
-	line-height: 19.2px;
+	height: 69px;
+	border-radius: 15px;
+	padding: 14px 14px 0 20px;
+	font-size: 24px;
+	line-height: 29px;
 	font-weight: 400;
   }
 
   label {
-	font-size: 16px;
+	font-size: 24px;
   }
 
   .input {
 	width: 100%;
 	position: relative;
-	font-size: 15px;
+	font-size: 18px;
   }
 
   input::placeholder {
@@ -67,9 +73,9 @@
 
   .input label {
 	  position: absolute;
-	  top: 13px;
-	  left: 13px;
-	  font-size: 16px;
+	  top: 18px;
+	  left: 20px;
+	  font-size: 24px;
 	  color: #989898;
 	  pointer-events: none;
 	  transition: 0.2s ease all;
@@ -100,8 +106,8 @@
   .input input:focus ~ label,
   .input input:not(:placeholder-shown) ~ label {
 	  top: 5px;
-	  left: 14px;
-	  font-size: 12px; 
+	  left: 20px;
+	  font-size: 18px; 
   }
   
   .font-light {
@@ -141,85 +147,90 @@
   }
   
   .main-wrapper {
-	max-width: 1072px;
+	max-width: 1606px;
 	width: 100%;
 	min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 	position: relative;
 	margin: 0 auto;
-  }
-  
-  header {
-	margin-bottom: 26px;
-	padding-top: 12px;
+	padding-bottom: 63px;
   }
 
   .main-page {
 	width: 100%;
 	height: 100%;
-	background-image: url('./img/bg.png');
+	background-image: url('./img/bg_lg.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: right;
   }
 
+  .main-logo--lg,
   .main-logo--xs {
 	display: none;
   }
 
-  .hero {
-	max-width: 717px;
-	width: 100%;
+  header {
+	margin-bottom: 42px;
+	padding-top: 18px;
   }
 
+  .hero {
+	max-width: 1075px;
+	width: 100%;
+  }
+	
   .hero h1 {
 	color: var(--black);
-	font-size: 80px;
-	line-height: 80px;
+	font-size: 120px;
+	line-height: 120px;
 	margin-top: 14px;
   }
 
   .hero h2 {
-	color: var(--black);
-	font-size: 34px;
-	line-height: 42px;
-	margin-top: 24px;
+	  color: var(--black);
+	  font-size: 51px;
+	  line-height: 45px;
+	  margin-top: 44px;
   }
+
 
   .button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 46px;
+	height: 69px;
 	background-color: var(--green);
 	color: var(--white);
-	font-size: 16px;
-	border-radius: 10px;
+	font-size: 24px;
+	line-height: 29px;
+	border-radius: 15px;
+}
+
+.hero .button {
+	width: 381px;
+	margin-top: 72px;
 }
 
 .button:hover {
 	background-color: #A8C96F;
 }
-
-.hero .button {
-	width: 254px;
-	margin-top: 42px;
-}
   
 footer {
 	width: 100%;
-	position: absolute;
-	bottom: 0;
+	margin-top: auto;
+	padding-top: 30px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-bottom: 40px;
 }
 
 footer a,
 footer span {
-	font-size: 16px;
+	font-size: 24px;
 	color: var(--black);
-  }
+}
 
 .contact-form.content-wrapper {
 	display: flex;
@@ -227,25 +238,26 @@ footer span {
 }
 
 .contact-form .hero {
-	max-width: 524px;
-}
-
-.contact-form .hero {
-	max-width: 524px;
+	max-width: 768px;
 }
 
 .contact-form .hero h1 {
 	margin-top: 0;
 }
 
+.contact-form .hero h2 {
+	line-height: 63px;
+	margin-top: 34px;
+}
+
 .contact-form__content {
-	max-width: 470px;
+	max-width: 705px;
 	width: 100%;
-	height: 506px;
+	height: 759px;
 	position: relative;
 	background-color: #F3F3F3;
-	border-radius: 28px;
-	padding: 20px;
+	border-radius: 42px;
+	padding: 30px;
 }
 
 .contact-form__content .form {
@@ -258,45 +270,46 @@ footer span {
 }
 
 .contact-form__success {
-	padding-top: 212px;
+	padding-top: 319px;
 	display: none;
 }
 
 .contact-form__success img {
+	width: 420px;
 	position: absolute;
-	top: -60px;
-    left: 140px;
+	top: -90px;
+    left: 214px;
 }
 
 .contact-form__success h3 {
-	font-size: 34px;
-	line-height: 38.8px;
+	font-size: 51px;
+	line-height: 59px;
 	color: var(--black);
 	text-align: center;
 }
 
 .contact-form__success .button {
 	width: 100%;
-	margin-top: 45px;
+	margin-top: 64px;
 }
 
 .contact-form .form-container {
 	width: 100%;
 	display: grid;
-	gap: 10px;
+	gap: 15px;
 }
 
 .contact-form .if {
-	font-size: 12px;
+	font-size: 18px;
 	color: #8F8F8F;
 }
 
 .contact-form .form .button {
 	width: 100%;
-	margin-top: 18px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-top: 26px;
 }
 
 .dropdown {
@@ -311,9 +324,9 @@ footer span {
 
 .dropdown label {
 	position: absolute;
-	top: 14px;
-    left: 12px;
-	font-size: 16px;
+	top: 18px;
+    left: 20px;
+	font-size: 24px;
 	color: #989898;
 	pointer-events: none;
 	transition: 0.2s ease all;
@@ -321,9 +334,9 @@ footer span {
 }
 
 .dropdown label.active {
-	font-size: 12px;
+	font-size: 18px;
 	top: 6px;
-    left: 14px;
+    left: 20px;
 }
 
 .dropdown__button {
@@ -332,16 +345,16 @@ footer span {
   display: flex;
   align-items: flex-end;
   font-family: "Figtree", serif;
-  font-size: 16px;
-  line-height: 19.2px;
+  font-size: 24px;
+  line-height: 29px;
   color: #444444;
   text-align: left;
   background: #ffffff;
   border: 1px solid #ffffff;
   border-radius: 4px;
-  height: 46px;
-  padding: 10px 40px 4px 13px;
-  border-radius: 10px;
+  height: 69px;
+  padding: 10px 40px 8px 20px;
+  border-radius: 15px;
   margin: 0;
   cursor: pointer;
 }
@@ -350,11 +363,13 @@ footer span {
   content: "";
   position: absolute;
   top: 50%;
-  right: 15px;
+  right: 24px;
   transform: translateY(-50%);
-  width: 15px;
-  height: 15px;
-  background: url('./img/arrow.svg') 100% 100%;
+  width: 24px;
+  height: 24px;
+  background: url('./img/arrow_lg.svg') 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
   pointer-events: none;
   transition: 200ms ease;
 }
@@ -377,8 +392,8 @@ footer span {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  top: 73px;
   left: 0;
-  top: 50px;
   box-shadow: 0px 10px 20px 0px #88919d4d;
   border: 1px solid #e6eaed;
   border-radius: 4px;
@@ -388,14 +403,14 @@ footer span {
   opacity: 0;
   visibility: hidden;
   transition: 200ms ease;
-  border-radius: 10px;
+  border-radius: 15px;
   z-index: 2;
 }
 
 .dropdown__list-content {
-	max-height: 200px;
+	max-height: 300px;
 	overflow-y: auto;
-	padding: 6px;
+	padding: 10px;
 }
 
 .dropdown__search input {
@@ -405,10 +420,16 @@ footer span {
 .dropdown__list-item {
 	display: flex;
 	align-items: center;
-	gap: 10px;
-	font-size: 16px;
-	line-height: 19px;
+	margin: 0;
+	padding: 0;
+	padding: 25px 15px;
+	cursor: pointer;
+	font-size: 24px;
+	line-height: 18px;
 	border-radius: 8px;
+	gap: 10px;
+	color: #444444;
+	transition: 200ms ease;
 }
 
 .dropdown__search {
@@ -429,15 +450,275 @@ footer span {
   visibility: visible;
 }
 
-.dropdown__list-item {
-  margin: 0;
-  padding: 0;
-  padding: 15px;
-  cursor: pointer;
+.dropdown__list-item_active {
+	background: #F0F9E2;
+}
+
+.dropdown__list-item:hover {
+	background: #f5f8fa;
+}
+
+.dropdown__input_hidden {
+  display: none;
+}
+
+.phone-input-container {
+	width: 100%;
+	height: 69px;
+	display: flex;
+	align-items: center;
+	background: #ffffff;
+	border: 1px solid #ffffff;
+	border-radius: 15px;
+	padding: 5px 10px 5px 20px;
+}
+
+.country-code {
+	width: 90px;
+	border: none;
+	font-size: 24px;
+	background: none;
+	margin-right: 5px;
+	padding: 0;
+	cursor: pointer;
+}
+
+.phone-number {
+	flex: 1;
+	border: none;
+	outline: none;
+	font-size: 24px;
+	padding: 0;
+	background: none;
+}
+
+.optional-text {
+	font-size: 12px;
+	color: #aaa;
+	margin-top: 5px;
+}
+
+.flag {
+	width: 38px;
+	height: 23px;
+	background-image: url('https://flagcdn.com/w20/al.png');
+	background-size: cover;
+	margin-right: 8px;
+}
+
+@media (max-width: 1606px) {
+.main-wrapper {
+	max-width: 1071px;	
+	padding-bottom: 40px;
+}
+
+.main-logo--xl {
+	display: none;
+}
+
+.main-logo--lg {
+	display: block;
+}
+
+input,
+select  {
+	width: 100%;
+	height: 46px;
+	border-radius: 10px;
+	padding: 14px 14px 0 13px;
+	font-size: 16px;
+	line-height: 19.2px;
+	font-weight: 400;
+}
+
+label {
   font-size: 16px;
-  line-height: 18px;
+}
+
+.input {
+  font-size: 16px;
+}
+
+input::placeholder {
+  font-size: inherit;
+}
+
+.input label {
+	top: 13px;
+	left: 13px;
+	font-size: 16px;
+}
+
+input {
+  padding-top: 17px;
+}
+
+/* Стили для активного состояния (когда в фокусе или заполнено) */
+.input input:focus ~ label,
+.input input:not(:placeholder-shown) ~ label {
+	top: 5px;
+	left: 14px;
+	font-size: 12px; 
+}
+
+header {
+	margin-bottom: 31px;
+	padding-top: 12px;
+}
+
+.hero {
+	max-width: 717px;
+}
+
+.hero h1 {
+	font-size: 80px;
+	line-height: 80px;
+	margin-top: 14px;
+}
+
+.hero h2 {
+	font-size: 34px;
+	line-height: 42px;
+	margin-top: 24px;
+}
+
+.button {
+	height: 46px;
+	font-size: 16px;
+	border-radius: 10px;
+}
+
+.hero .button {
+	width: 254px;
+	margin-top: 42px;
+}
+
+footer a,
+footer span {
+	font-size: 16px;
+}
+
+.contact-form .hero {
+	max-width: 524px;
+}
+
+.contact-form__content {
+	max-width: 470px;
+	height: 506px;
+	border-radius: 28px;
+	padding: 20px;
+}
+
+.contact-form__success {
+	padding-top: 212px;
+}
+
+.contact-form__success img {
+	width: auto;
+	top: -60px;
+    left: 140px;
+}
+
+.contact-form .hero h2 {
+	font-size: 34px;
+	line-height: 42px;
+	margin-top: 24px;
+}
+
+.contact-form__success h3 {
+	font-size: 34px;
+	line-height: 38.8px;
+}
+
+.contact-form__success .button {
+	width: 100%;
+	margin-top: 45px;
+}
+
+.contact-form .form-container {
+	gap: 10px;
+}
+
+.contact-form .if {
+	font-size: 12px;
+	padding-top: 6px;
+}
+
+.contact-form .form .button {
+	margin-top: 18px;
+}
+
+.dropdown label {
+	top: 14px;
+    left: 12px;
+	font-size: 16px;
+}
+
+.dropdown label.active {
+	font-size: 12px;
+	top: 6px;
+    left: 14px;
+}
+
+.dropdown__button {
+  font-size: 16px;
+  line-height: 19.2px;
   color: #444444;
-  transition: 200ms ease;
+  border-radius: 4px;
+  height: 46px;
+  padding: 10px 40px 4px 13px;
+  border-radius: 10px;
+}
+
+.dropdown__button::after {
+	width: 15px;
+	height: 15px;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  background: url('./img/arrow.svg') 100% 100%;
+}
+
+.dropdown__list {
+  left: 0;
+  top: 50px;
+  border-radius: 4px;
+  border-radius: 10px;
+}
+
+.dropdown__list-content {
+	max-height: 200px;
+	padding: 6px;
+}
+
+.dropdown__search input {
+	padding: 10px 10px 0px 13px;
+}
+
+.dropdown__list-item {
+	padding: 15px;
+	font-size: 16px;
+	line-height: 18px;
+	border-radius: 8px;
+	gap: 10px;
+}
+
+.dropdown__search {
+	width: 100%;
+	position: relative;
+	border-bottom: 1px solid #E1E1E1;
+}
+
+.dropdown__search img {
+	position: absolute;
+	transform: translateY(-50%);
+	top: 50%;
+	right: 10px;
+}
+
+.dropdown__list_visible {
+  opacity: 1;
+  visibility: visible;
 }
 
 .dropdown__list-item_active {
@@ -453,48 +734,31 @@ footer span {
 }
 
 .phone-input-container {
-	width: 100%;
 	height: 46px;
-	display: flex;
-	align-items: center;
-	background: #ffffff;
-	border: 1px solid #ffffff;
 	border-radius: 10px;
 	padding: 5px 10px 5px 13px;
+}
+
+.country-code {
+	width: 70px;
+	font-size: 16px;
+	margin-right: 5px;
+}
+
+.phone-number {
+	font-size: 16px;
+}
+
+.optional-text {
+	font-size: 12px;
+	margin-top: 5px;
 }
 
 .flag {
 	width: 26px;
 	height: 18px;
-	background-image: url('https://flagcdn.com/w20/al.png'); /* Albania flag example */
-	background-size: cover;
-	border-radius: 3px;
 	margin-right: 8px;
 }
-
-.country-code {
-	width: 70px;
-	border: none;
-	font-size: 16px;
-	background: none;
-	margin-right: 5px;
-	padding: 0;
-	cursor: pointer;
-}
-
-.phone-number {
-	flex: 1;
-	border: none;
-	outline: none;
-	font-size: 16px;
-	padding: 0;
-	background: none;
-}
-
-.optional-text {
-	font-size: 12px;
-	color: #aaa;
-	margin-top: 5px;
 }
 
 @media (max-width: 1080px) {
@@ -506,11 +770,7 @@ footer span {
 @media (max-width: 840px) {
 	.main-page {
 		background-image: url('./img/bg_sm.png');
-	}
-
-	header {
-		padding-top: 0;
-		margin-bottom: 27px;
+		background-position: 0px 80px;
 	}
 
 	.main-logo--lg {
@@ -519,6 +779,131 @@ footer span {
 
 	.main-logo--xs {
 		display: block;
+		width: 182px;
+		height: 34px;
+	}
+
+	.main-wrapper {
+		padding: 16px;
+		padding-top: 20px;
+	}
+
+	header {
+		padding-top: 0;
+		margin-bottom: 34px;
+	}
+
+	.hero {
+		margin-bottom: 28px;
+		padding-top: 6px;
+	}
+
+	.hero h1 {
+		margin-top: 0;
+		font-size: 56px;
+		line-height: 56px;
+	}
+
+	.hero h1 br {
+		display: none;
+	}
+
+	.hero h2 {
+        max-width: 350px;
+		font-size: 36px;
+		line-height: 44px;
+		margin-top: 25px;
+	}
+
+	.hero .button {
+		width: 100%;
+		margin-top: 45px;
+	}
+	
+	.contact-form__success {
+		padding-top: 209px;
+	}
+	
+	.contact-form.content-wrapper {
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	.contact-form .hero {
+		padding-top: 0;
+		max-width: 100%;
+		margin-bottom: 46px;
+	}
+
+	.contact-form .hero h2 {   
+		font-size: 36px;     
+		line-height: 44px;
+		margin-top: 24px;
+        padding-left: 5px;
+		padding-right: 12px;
+	}
+
+	.contact-form__content {
+		height: 494px;
+		padding: 14px;
+		border-radius: 20px;
+	}
+
+	.contact-form__success img {
+		width: 174px;
+		top: 56px;
+		left: 121px;
+	}
+
+	.contact-form__success h3 {
+		font-size: 26px;
+		line-height: 30px;
+		margin-top: 25px;
+		padding: 0 20px;
+	}
+
+	.contact-form__success h3 br {
+		display: none;
+	}
+
+	.contact-form__success .button {
+		margin-top: 36px;
+	}
+
+	footer {
+		position: relative;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-top: 50px;
+		padding-bottom: 15px;
+		gap: 6px;
+		padding-right: 15px;
+	}
+
+	footer a,
+	footer span {
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	.input label,
+	.dropdown label {
+		left: 14px;
+	}
+}
+
+@media (max-width: 390px) {
+	.main-page {
+		background-image: url('./img/bg_sm.png');
+	}
+
+	header {
+		margin-bottom: 27px;
+	}
+
+	.main-logo--xs {
+		width: 150px;
+        height: 28px;
 	}
 
 	.main-wrapper {
@@ -527,15 +912,12 @@ footer span {
 
 	.hero {
 		margin-bottom: 28px;
+		padding-top: 0;
 	}
 
 	.hero h1 {
 		font-size: 40px;
 		line-height: 40px;
-	}
-
-	.hero h1 br {
-		display: none;
 	}
 
 	.hero h2 {
@@ -560,6 +942,14 @@ footer span {
 
 	.contact-form .hero {
 		max-width: 100%;
+		margin-bottom: 28px;
+	}
+
+	.contact-form .hero h2 {
+		font-size: 20px;
+		line-height: 24px;
+		margin-top: 16px;
+		padding: 0;
 	}
 
 	.contact-form__content {
@@ -579,6 +969,7 @@ footer span {
 		font-size: 20px;
 		line-height: 24px;
 		margin-top: 25px;
+		padding: 0 40px;
 	}
 
 	.contact-form__success .button {
