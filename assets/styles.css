@@ -847,6 +847,7 @@ footer span {
 		height: 494px;
 		padding: 14px;
 		border-radius: 20px;
+		margin: 0 auto;
 	}
 
 	.contact-form__success img {
