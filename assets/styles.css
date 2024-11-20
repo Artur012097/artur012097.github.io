@@ -617,6 +617,10 @@ footer span {
 	margin-right: 8px;
 }
 
+.flag-img {
+	border: 1px solid #E3E3E3;
+}
+
 @media (max-width: 1606px) {
 .main-wrapper {
 	max-width: 1071px;	

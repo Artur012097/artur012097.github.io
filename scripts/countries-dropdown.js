@@ -208,7 +208,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		for (const [key, value] of Object.entries(countriesList)) {			
 			const element = `
 			<li class="dropdown__list-item font-regular" dataset-value="${key}">
-				<img src="${value.normal}" alt="${key}" width="24" height="15" />
+				<img src="${value.normal}" alt="${key}" width="24" height="15" class="flag-img" />
 				<span>${key}</span>
 			</li>
 			`
